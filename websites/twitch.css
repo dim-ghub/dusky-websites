@@ -602,11 +602,14 @@
         color: var(--on_surface) !important;
     }
 
-    [style="color: rgb(56, 122, 255);"] {
-      color: var(--primary) !important;
-    }
-    [style="color: rgb(245, 0, 155);"] {
-      color: var(--secondary) !important;
+    .chat-line__message,
+    .chat-message {
+      [style="color: rgb(56, 122, 255);"] {
+        color: var(--primary) !important;
+      }
+      [style="color: rgb(245, 0, 155);"] {
+        color: var(--secondary) !important;
+      }
     }
 
     /* FrankerFaceZ uptime timer */
