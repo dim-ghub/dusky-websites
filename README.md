@@ -14,7 +14,9 @@ Copy the template into `~/.config/matugen/templates`.
 
 ## Step 4: Update Matugen Config
 
-Add the template to your matugen config at `~/.config/matugen/config.toml`.
+An example entry is provided in `config.toml` in this repository. Copy that entry to your matugen config at `~/.config/matugen/config.toml`.
+
+**Important:** You must swap out the Firefox profile directory path in the example with your own profile directory path found in Step 1.
 
 ## Step 5: Create the Chrome Folder
 
