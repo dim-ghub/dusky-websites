@@ -583,20 +583,23 @@
         }
       }
     }
-    [style*="rgb(255, 255, 255)"] {
-      color: var(--surface_container_lowest) !important;
-      .channel-root,
-      .channel-info-content,
-      .chat-author__display-name,
-      .chatter-name,
-      &[data-a-target="chat-message-username"],
-      &.message-author__display-name {
-        color: var(--on_surface) !important;
+    .chat-line__message,
+    .chat-message,
+    [data-a-target="chat-message"] {
+      [style*="rgb(255, 255, 255)"] {
+        color: var(--surface_container_lowest) !important;
+        .channel-root,
+        .channel-info-content,
+        .chat-author__display-name,
+        .chatter-name,
+        &[data-a-target="chat-message-username"],
+        &.message-author__display-name {
+          color: var(--on_surface) !important;
+        }
       }
-    }
 
-    .chatter-name [style*="rgb(255, 255, 255)"] {
-      color: var(--on_surface) !important;
+      .chatter-name [style*="rgb(255, 255, 255)"] {
+        color: var(--on_surface) !important;
     }
 
     [style="color: rgb(56, 122, 255);"] {
@@ -634,13 +637,13 @@
     }
 
     .fixed-prediction-button--blue,
-    [style*="background-color: rgb(56, 122, 255);"],
-    [style*="background: rgb(56, 122, 255);"] {
+    div.fixed-prediction-bar [style*="background-color: rgb(56, 122, 255);"],
+    div.fixed-prediction-bar [style*="background: rgb(56, 122, 255);"] {
       background-color: var(--primary) !important;
     }
     .fixed-prediction-button--pink,
-    [style*="background-color: rgb(245, 0, 155);"],
-    [style*="background: rgb(245, 0, 155);"] {
+    div.fixed-prediction-bar [style*="background-color: rgb(245, 0, 155);"],
+    div.fixed-prediction-bar [style*="background: rgb(245, 0, 155);"] {
       background-color: var(--secondary) !important;
     }
 
@@ -988,7 +991,8 @@
 
     /* Chat message highlights */
 
-    div[style*="border"] {
+    .chat-line__message[style*="border"],
+    .chat-message[style*="border"] {
       /* Suspicious user */
       &[style*="rgb(255, 130, 128)"] {
         border-color: var(--error) !important;
