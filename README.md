@@ -39,7 +39,7 @@ Add this as the first line:
 Add an import line for each website CSS theme you want to have applied. For example:
 
 ```css
-@import url("./websites/arch-wiki.css");
+@import url("./websites/arch_wiki.css");
 ```
 
 ## Step 7: Refresh Matugen
